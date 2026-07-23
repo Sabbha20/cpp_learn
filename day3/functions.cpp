@@ -1,18 +1,20 @@
 #include <cstdint>
 #include <iostream>
 
-// function declaration
-void my_print_function();
+void print_my_number(std::uint32_t number)
+{
+    std::cout << number << "\n";
+}
+
+void print_my_number(double number)
+{
+    std::cout << number << "\n";
+}
 
 int main()
 {
-    my_print_function(); // function call
+    print_my_number(10U);
+    print_my_number(10.5);
 
     return 0;
-}
-
-// function definiton
-void my_print_function()
-{
-    std::cout << "Hello World!\n";
 }

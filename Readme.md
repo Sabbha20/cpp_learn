@@ -34,6 +34,12 @@ g++ -std=c++20 Main.cc -o myprogram
 ./myprogram
 ```
 
+For the library example in `day3/Lib`, you can compile and run both files in one command:
+
+```bash
+cd day3/Lib && clang++ -std=c++17 main.cc lib.cc -o main && ./main
+```
+
 If your file is named `main.cpp` instead, use that filename in the command above. Replace `-std=c++20`
 with `-std=c++17` if you prefer C++17 compatibility.
 
